@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="nLikes.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Likes</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 proyectos">
+                    <h2>Proyectos</h2>
+                    <a href="index.html">Pagina principal</a>
+                    <a href="count_letters.html">Contar una cadena de texto</a>
+                    <a href="count_range_arr.html">Contar un array por rango</a>
+                    <a href="IMS.html">Índice de masa corporal</a>
+                    <a href="nLikes.html">Número de likes</a>
+                    <a href="pass_is_valid.html">Validar contraseña</a>
+                    <a href="taxes.html">Calcular impuestos</a>
+                    <a href="print_arr.html">Imprimir un arreglo</a>
+                    <a href="sum_arr.html">Sumar arreglo</a>
+                    <a href="mult_arr.html">Multiplicar arreglo</a>
+                    <a href="max_num.html">Encontrar el máximo</a>
+                </div>
+                <div class="col-md-6 interactuacion">
+                    <!-- Aquí puedes agregar contenido relacionado con los resultados -->
+                    <h2>Numero de likes</h2>
+                    <form id="nlikes-form">
+                        <div class="form-group">
+                            <label for="likes">Ingresa el numero de likes</label>
+                            <input type="number" name="likes" id="likes" class="form-control" required>
+                        </div>
+                        
+                        <button type="button" onclick="returndata()">Verificar cantidad</button>
+                    </form>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

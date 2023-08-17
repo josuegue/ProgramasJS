@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="taxes.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>taxes</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 proyectos">
+                    <h2>Proyectos</h2>
+                    <a href="index.html">Pagina principal</a>
+                    <a href="count_letters.html">Contar una cadena de texto</a>
+                    <a href="count_range_arr.html">Contar un array por rango</a>
+                    <a href="IMS.html">Índice de masa corporal</a>
+                    <a href="nLikes.html">Número de likes</a>
+                    <a href="pass_is_valid.html">Validar contraseña</a>
+                    <a href="taxes.html">Calcular impuestos</a>
+                    <a href="print_arr.html">Imprimir un arreglo</a>
+                    <a href="sum_arr.html">Sumar arreglo</a>
+                    <a href="mult_arr.html">Multiplicar arreglo</a>
+                    <a href="max_num.html">Encontrar el máximo</a>
+                </div>
+                <div class="col-md-6 interactuacion">
+                    <h2>Calcular Impuestos</h2>
+                    <!-- Aquí puedes agregar contenido relacionado con los resultados -->
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Name</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                        <input type="number" name="age" id="age" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Salary</label>
+                        <input type="range" min="0" max="10000" step="100" name="salary" id="salary" class="form-control" required>
+                        <span id="rangeValue">0</span>
+                        </div>
+                        <button type="button" onclick="calculate_salary()">Calculate tax</button>
+                    </form>
+
+                    <div id="result"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
